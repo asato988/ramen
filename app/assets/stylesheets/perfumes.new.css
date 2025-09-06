@@ -1,0 +1,41 @@
+
+.card {
+    height: 400px;
+
+}
+.name {
+    text-align: center;
+    height: 500px;
+    
+}
+.role {
+    text-align: center;
+    height: 400px;
+    
+}
+.box {
+    text-align: center;
+    
+}
+
+.img {
+    text-align: center;
+    background-image:url(ra-men.jpeg) ;
+    background-size:  cover;
+}
+
+.img2 {
+    text-align: center;
+    background-image:url(ma-ra-tan.jpg);
+    background-size:  cover;
+}
+.img3 {
+    text-align: center;
+    background-image:url(ra-men7.jpg);
+    background-size:  cover;
+}
+.img4 {
+    text-align: center;
+    background-image:url(ra-men8.png);
+    background-size:  cover;
+}

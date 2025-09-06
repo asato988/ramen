@@ -1,0 +1,130 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ * {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+header {
+  background-color: yellowgreen;
+  height: 80px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: white; 
+  text-decoration: none; 
+}
+header h1 {
+  color: white;
+  margin-left: 20px;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+header ul {
+  display: flex;
+}
+header li {
+  list-style: none;
+  margin-right: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #fbffdb;
+    height: 100vh;
+    
+
+}
+
+
+.header {
+    background-color: #ffdb88;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 20px 40px;
+}
+
+
+.head-list {
+    display: flex;
+    gap: 30px;
+}
+
+.nav li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.title {text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    
+    
+    
+}
+
+
+.list li {
+    list-style: none;
+}
+
+
+
+.slide-container {
+ width: 100%;
+ height: auto;
+ margin: 50px auto;
+ display: flex;
+ align-items: center;
+ overflow: hidden;
+ 
+}
+.slide-wrapper {
+ display: flex;
+ animation: slide-flow 20s infinite linear 1s both;
+}
+.slide{
+ width: 300px;
+ object-fit:cover;
+ border: 1px solid #ddd;
+}
+@keyframes slide-flow {
+ 0% {transform: translateX(0);}
+ 100% {transform: translateX(-100%);}
+}
+.fit-image{
+ width: 300px;
+ height: 200px;
+ object-fit: cover;
+ object-position: center;
+}

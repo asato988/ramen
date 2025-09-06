@@ -1,0 +1,20 @@
+<h1>おすすめラーメン診断</h1>
+<h3>ラーメンの一覧ページ</h3>
+<div class="posts-container">
+  <%= link_to "新規投稿へ", new_post_path %>
+  <% @posts.each do |t| %>
+    <div class="posts">
+    <% if t.image.attached? %>
+            <%= image_tag t.image, size: '250x200'%>
+        <% end %>
+      <%= t.name %>
+      <%= t.genre %>
+      <%= t.address %>
+      <%= t.about %>
+      <%= link_to "詳細へ", post_path(t.id) %> 
+    </div>
+  <%= link_to "編集する", edit_post_path(t.id) %>
+  <%= button_to "削除する", post_path(t.id), method: :delete %> 
+  <%= link_to "診断を始める", new_perfume_path, class: "link" %>
+  <% end %>z
+</div>

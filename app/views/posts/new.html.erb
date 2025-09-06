@@ -1,0 +1,43 @@
+<h1>(ラーメンおすすめ診断)</h1>
+<h3>新規投稿ページ</h3>
+<%= form_for @posts do |f| %>
+
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, :size => 30 %>
+  </div>
+
+# データ型がstringで選択式の入力フォーム
+  <div class="field">
+    <%= f.label :genre  %>
+    <%= f.select :genre, 
+    [["家系", "家系"], 
+    ["二郎系", "二郎系"], 
+    ["淡麗系", "淡麗系"]], include_blank: "選択して下さい" %>
+  </div>
+
+# データ型がintegerで数字のみを入力するフォーム
+  <div class="field">
+    <%= f.label :address  %>
+    <%= f.text_field :address, :size => 10 %>
+  </div>
+
+# データ型がtextで自由記述の入力フォーム
+  <div class="field">
+    <%= f.label :about  %>
+    <%= f.text_area :about, :size => "30x2" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+
+    <%= f.label :youtube_url %>
+    <%= f.text_field :youtube_url, :size => 140 %>
+  <%= f.submit "投稿する" %>
+
+<% end %>
+
+<%= link_to "一覧に戻る", posts_path %>

@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>ramen</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<div class="slide-container">
+ <div class="slide-wrapper">
+ <%= image_tag("ra-men.jpeg", class: "fit-image") %>
+ <%= image_tag("ra-men2.jpg", class: "fit-image") %>
+ <%= image_tag("ra-men6.jpeg", class: "fit-image") %>
+ </div>
+ <div class="slide-wrapper">
+  <%= image_tag("ra-men.jpeg", class: "fit-image") %>
+ <%= image_tag("ra-men2.jpg", class: "fit-image") %>
+ <%= image_tag("ra-men6.jpeg", class: "fit-image") %>
+ </div>
+ <div class="slide-wrapper">
+  <%= image_tag("ra-men.jpeg", class: "fit-image") %>
+ <%= image_tag("ra-men2.jpg", class: "fit-image") %>
+ <%= image_tag("ra-men6.jpeg", class: "fit-image") %>
+ </div>
+</div>
+<div class="background">
+    <div class="title">
+           <h3> おすすめラーメン診断</h3>
+     </div>
+
+</div>
+
+
+
+    <header>
+      <h1>ramen</h1>
+      <div class="header-list">
+      <ul>
+        <li><%= link_to "ホーム", perfumes_path %></li>
+        <li><%= link_to "新規投稿",posts_path %></li>
+      </ul>
+      </div>
+    </header>
+  <main>
+
+
+    
+      <%= yield %>
+    </main>
+  </body>
+</html>
+</html>

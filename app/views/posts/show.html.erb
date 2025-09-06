@@ -1,0 +1,18 @@
+<h1>Ramen診断</h1>
+<h3>Tweet詳細</h3>
+
+<div class="posts-container">
+    <div class="posts">
+      <% if @post.image.attached? %>
+        <%= image_tag @post.image, size: '250x200'%>
+      <% end %>
+      <%= @post.name %>
+      <%= @post.genre %>
+      <%= @post.address %>
+      <%= @post.about %>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= find_youtube_url(@post.youtube_url) %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <%= link_to "Ramen一覧に戻る", posts_path %>
+    <%= link_to "編集する", edit_post_path(@post.id) %>
+
+</div>
